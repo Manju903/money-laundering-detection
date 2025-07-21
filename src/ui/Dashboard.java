@@ -49,12 +49,12 @@ public class Dashboard {
                 ps.setString(3, tx.location);
                 ps.executeUpdate();
                 if (RiskAnalyzer.isSuspicious(tx)) {
-                    JOptionPane.showMessageDialog(f, "⚠️ Suspicious Transaction Detected!");
+                    JOptionPane.showMessageDialog(f, "Suspicious Transaction Detected!");
                 } else {
-                    JOptionPane.showMessageDialog(f, "✅ Transaction Recorded");
+                    JOptionPane.showMessageDialog(f, "Transaction Recorded");
                 }
             } catch (Exception ex) {
-                JOptionPane.showMessageDialog(f, "❌ Error: " + ex.getMessage());
+                JOptionPane.showMessageDialog(f, "Error: " + ex.getMessage());
             }
         });
     }
