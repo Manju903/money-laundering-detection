@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class Register {
 	public static boolean registerUser(String username, String password){
-		// TODO Auto-generated method stub
+		
 		 try {
 	            Connection conn = DBConnection.getConnection();
 	            PreparedStatement ps = conn.prepareStatement("INSERT INTO users (username, password) VALUES (?, ?)");
